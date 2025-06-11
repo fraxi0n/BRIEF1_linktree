@@ -4,6 +4,8 @@
       --text: #212529;
       --card-bg: #ffffff;
       --border-radius: 12px;
+
+ 
     }
 
     * {
@@ -12,12 +14,20 @@
       box-sizing: border-box;
     }
 
+  
+
+.oxanium {
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
     
     @font-face {
     font-family: 'titlePolice';
-    src: url('font/Alien-Encounters-Regular.ttf') format('truetype');
-         /* url('fonts/ma-police.woff') format('woff'),
-         url('fonts/ma-police.ttf') format('truetype'); */
+    src: url('font/Alien-Encounters-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap; /* Améliore les performances de chargement */
@@ -49,14 +59,15 @@
       text-align: center;
     }
 
-   
-
-    .profile-section {
+    .section {
       position: relative;
       text-align: center;
 
       background-color: var(--background);
-      border-radius: var(--border-radius)
+      border-radius: var(--border-radius);
+      margin : 10px;
+      padding : 10px
+
     }
 
     .banner {
@@ -88,16 +99,25 @@
     .profile-info h1 {
       font-family: "titlePolice";
       font-size: 1.8rem;
-      margin-bottom: 0.25rem;
+
+      color: #27222c;
+      text-shadow: #ffffff 1px 1px 10px;
+
+      transform: translateY(-70px)
     }
 
     h2 {
-        font-size: 1.2rem
+        font-size: 1.1rem;
+      transform: translateY(-40px)
+
     }
 
     h3 {
-        font-size: 1.4rem;
-    }
+        font-size: 1.2rem;
+      transform: translateY(-20px)
+
+
+      }
     
 
     .profile-info p {
@@ -106,6 +126,7 @@
     }
 
     .section-title {
+      font-family: "titlePolice";
       font-weight: 700;
       font-size: 1.25rem;
       margin-top: 1rem;
